@@ -1,6 +1,6 @@
 # smartbot
 
-### OBSERVAÇÕES:
+### Observações:
 Para esse programa assumi que apenas as bibliotecas padrões do python poderiam ser usadas. Sendo assim utilizei apenas 3 delas json,urllib e argparse.
 
 Para utilizar o programa basta rodar o app.py:
@@ -17,4 +17,9 @@ python app.py 'pessoa 1' 'pessoa 2' --race
 
 ```
 
+### Desenvolvimento:
+
+Eu decidi criar uma biblioteca que extrai os dados nescessarios da API utilizando requisições e trata o json recebido. E um arquivo principal que cuida do CLI e recolhe os dados.
+
 ### Testes: 
+
