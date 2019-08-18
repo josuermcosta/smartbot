@@ -1,4 +1,6 @@
-from anakinProj.grab_info import SW_lib
+from grab_info import SW_lib
+
+        
 
 class data():
     def __init__(self):
@@ -32,7 +34,12 @@ class data():
 
     def pilot_max_speed(self):
         for piloto in self.pilots:
-            for ship in piloto['vehicles']:
-                if piloto['max_speed'] < float(self.ships[ship]['max_atmosphering_speed']):
-                    piloto['max_speed'] = float(self.ships[ship]['max_atmosphering_speed'])
-            print(piloto['name'],piloto['max_speed'])
+            for ship in self.pilots[piloto]['vehicles']:
+                if self.pilots[piloto]['max_speed'] < float(self.ships[ship]['max_atmosphering_speed']):
+                    self.pilots[piloto]['max_speed'] = float(self.ships[ship]['max_atmosphering_speed'])
+    
+    def return_pilots(self):
+        aux = []
+        for piloto in self.pilots:
+            aux.append((self.pilots[piloto]['name'],self.pilots[piloto]['max_speed']))
+        return aux
