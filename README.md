@@ -22,4 +22,4 @@ python app.py 'pessoa 1' 'pessoa 2' --race
 Eu decidi criar uma biblioteca que extrai os dados nescessarios da API utilizando requisições e trata o json recebido. E um arquivo principal que cuida do CLI e recolhe os dados.
 
 ### Testes: 
-
+Em desenvolvimento.
