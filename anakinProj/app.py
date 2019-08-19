@@ -16,8 +16,6 @@ def race(lista):
             if current_speed < each[1]:
                 current_pilot = each[0]
                 current_speed = each[1]
-            else:
-                current_speed = each[1]
         print('Winner: ' + current_pilot)
 
 def helper_function(lista):
