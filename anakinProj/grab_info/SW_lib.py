@@ -11,7 +11,7 @@ def get_pilot(nome):
     if type(aux) == str:
         return False
     else:
-        if aux['count'] == 0:
+        if aux['count'] != 1:
             return False
         else:
             return aux['results'][0]

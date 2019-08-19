@@ -41,5 +41,9 @@ class data():
     def return_pilots(self):
         aux = []
         for piloto in self.pilots:
-            aux.append((self.pilots[piloto]['name'],self.pilots[piloto]['max_speed']))
+            if(self.pilots[piloto]['status'] == 'Pilot found'):
+                aux.append((self.pilots[piloto]['name'],self.pilots[piloto]['max_speed']))
+            else:
+                print('Pilot '+self.pilots[piloto]['name']+ ' was not found in the API. Please try to correct his name or check your internet collection.')
+                print('________________________________________________________________')
         return aux

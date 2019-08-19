@@ -15,9 +15,7 @@ def race(lista):
         for each in aux:
             if current_speed < each[1]:
                 current_pilot = each[0]
-                current_speed = each[1]
-            else:
-                current_speed = each[1]
+                current_speed = each[1]        
         print('Winner: ' + current_pilot)
 
 def helper_function(lista):
@@ -26,6 +24,7 @@ def helper_function(lista):
         aux.grab_pilot(each)
         aux.grab_ships(each)
     aux.pilot_max_speed()
+    print('\n')
     return aux.return_pilots()
 
 parser = argparse.ArgumentParser(description='Get the fastest ship from a pilot.')
