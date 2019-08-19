@@ -28,7 +28,7 @@ def helper_function(lista):
     aux.pilot_max_speed()
     return aux.return_pilots()
 
-parser = argparse.ArgumentParser(description='Get the fastest ship from a pilot.')
+parser = argparse.ArgumentParser(description='Get the fastest ship from a pilot. Or make a race between them.')
 
 parser.add_argument('pilots', metavar='P', type=str, nargs='+',
                     help='Names from the pilots ')
